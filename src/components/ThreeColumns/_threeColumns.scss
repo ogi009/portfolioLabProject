@@ -1,0 +1,36 @@
+@import "src/scss/colors";
+@import "src/scss/fonts";
+html {
+  overflow-x: hidden;
+}
+.threeColumns_container {
+  width: 100vw;
+  height: 400px;
+  max-width:100%;
+  background-image: url("../../assets/3 Columns Background.png");
+  display: flex;
+  justify-content: space-around;
+}
+.threeColumns_container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+
+}
+.threeColumns_container-title{
+  font-size: 6em;
+  color: $brown;
+}
+.threeColumns_container-title2{
+  font-size: 1.2em;
+  color: $black;
+  margin-top: 1em;
+}
+.threeColumns_container-title3{
+  font-size: 1em;
+  color: $brown;
+  padding: 2em;
+  margin: 1em;
+  text-align: center;
+}
