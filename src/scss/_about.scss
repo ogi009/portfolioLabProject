@@ -1,0 +1,15 @@
+@import "colors";
+@import "fonts";
+
+.about_container {
+ width: 100vw;
+  display: flex;
+  margin-top: 2em;
+}
+.about_container-content {
+  width: 50%;
+  background-color: $white;
+}
+.about_container-photo {
+  width: 50%;
+}

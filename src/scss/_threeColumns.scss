@@ -1,5 +1,5 @@
-@import "src/scss/colors";
-@import "src/scss/fonts";
+@import "colors";
+@import "fonts";
 html {
   overflow-x: hidden;
 }
@@ -7,7 +7,7 @@ html {
   width: 100vw;
   height: 400px;
   max-width:100%;
-  background-image: url("../../assets/3 Columns Background.png");
+  background-image: url("../assets/3 Columns Background.png");
   display: flex;
   justify-content: space-around;
 }

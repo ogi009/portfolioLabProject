@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import "./_header.scss";
+import "../../scss/_header.scss";
 import decoration from "../../assets/Decoration.svg"
+import Nav from "../Nav/Nav";
 
 const Header = () => {
     const linkStyle = {
@@ -16,14 +17,8 @@ const Header = () => {
                     <Link to={"/logIn"} style={linkStyle}><p className="link_text">Zaloguj</p></Link>
                     <Link to={"/register"}  style={linkStyle}><p className="link_text">Załóz konto</p></Link>
                 </div>
-                <div className="nav_container">
-                    <Link to={"/start"} style={linkStyle}><p className="link_text2">Start</p></Link>
-                    <Link to={"/aboutWeb"} style={linkStyle}><p className="link_text2">O co chodzi?</p></Link>
-                    <Link to={"/aboutUs"} style={linkStyle}><p className="link_text2">O nas</p></Link>
-                    <Link to={"/organization"} style={linkStyle}><p className="link_text2">Fundacja i organizacja</p></Link>
-                    <Link to={"/contact"} style={linkStyle}><p className="link_text2">Kontakt</p></Link>
-                </div>
-                <div className="main_container">
+                <Nav/>
+                <div className="main_container" id="maincontainer">
                     <p>Zacznij pomagać!</p>
                     <p>Oddaj niechciane rzeczy w zaufane ręce</p>
                     <img src={decoration}/>

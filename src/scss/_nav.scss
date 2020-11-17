@@ -1,0 +1,14 @@
+.nav_container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  margin: 1em;
+  height: 5em;
+}
+.link_text2{
+  padding: 0.5em;
+  border:1px solid transparent;
+}
+.link_text2:hover {
+  border: 1px solid black;
+}

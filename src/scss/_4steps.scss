@@ -1,0 +1,65 @@
+@import "colors";
+@import "fonts";
+
+.link_text4 {
+  padding: 0.5em 2em;
+  border: 2px solid $grey;
+  margin: 1em;
+  color: $black;
+  width: 8em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.steps_container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+}
+.steps_container-title  {
+  text-align: center;
+}
+.steps_container-title p {
+  font-size: 3em;
+  color: $black;
+}
+.steps_container-title img  {
+  margin: 2em;
+}
+
+.steps_container-icons {
+  width: 100vw;
+  display: flex;
+  background-color: #F0F1F1;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.steps_container-icons div {
+  text-align: center;
+  margin: 3em;
+  width: 13em;
+}
+.steps_container-icons p:first-of-type{
+  position: relative;
+  padding: 0.5em;
+  font-size: 1.2em;
+  opacity: 1;
+}
+.steps_container-icons p:first-of-type:before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  bottom: 0;
+  left: 30%;
+  border-bottom: 3px solid $grey;
+}
+.steps_container-icons p:last-child {
+  position: relative;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-top: 0.5em;
+}

@@ -1,5 +1,5 @@
-@import "src/scss/colors";
-@import "src/scss/fonts";
+@import "colors";
+@import "fonts";
 
 .container {
   height: 100vh;
@@ -7,7 +7,7 @@
   display: flex;
 }
 .img1 {
-  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-image: url("../assets/Home-Hero-Image.jpg");
   width: 50vw;
   background-size: cover;
   background-position: right;
@@ -64,7 +64,7 @@
   padding: 0.5em 2em;
   border:1px solid $grey;
   margin: 1em;
-  color: $grey;
+  color: $black;
   width: 10em;
   font-size: 0.8em;
 }

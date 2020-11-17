@@ -1,9 +1,9 @@
 import React from 'react';
-import "./_threeColumns.scss";
+import "../../scss/_threeColumns.scss";
 
 const ThreeColumns = () => {
     return (
-        <div className="threeColumns_container">
+        <div className="threeColumns_container" id="threecolumns">
             <div className="threeColumns_container-content">
                 <p className="threeColumns_container-title">10</p>
                 <p className="threeColumns_container-title2">ODDANYCH WORKÓW</p>
