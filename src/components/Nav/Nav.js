@@ -26,7 +26,14 @@ const Nav = () => {
                   duration={500}
                   style={linkStyle}><p className="link_text2">O nas</p>
             </Link>
-            <Link to={"/organization"} style={linkStyle}><p className="link_text2">Fundacja i organizacja</p></Link>
+            <Link
+                activeClass="active"
+                to="whoWeHelp_container"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                style={linkStyle}><p className="link_text2">Fundacja i organizacja</p></Link>
             <Link to={"/contact"} style={linkStyle}><p className="link_text2">Kontakt</p></Link>
         </div>
     );

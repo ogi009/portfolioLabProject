@@ -1,0 +1,75 @@
+@import "colors";
+@import "fonts";
+
+.whoWeHelp_container {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.whoWeHelp_container h1{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+.whoWeHelp_buttons {
+  display: flex;
+  justify-content: center;
+  margin-left: 4.5em;
+  font-size: 1.5em;
+  color: $black;
+}
+.whoWeHelp_buttons p {
+  padding: 1em;
+  border: 1px solid transparent;
+  margin:  1em 2em;
+}
+.whoWeHelp_buttons p:hover {
+  border: 1px solid $black;
+}
+.whoWeHelp_container-text {
+  font-size: 1.5em;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  padding: 0 12em;
+}
+.organization_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $black;
+  margin: 2.5em;
+}
+.organization_container h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.organization_container p {
+  font-size: 1.4em;
+}
+.organization_container-content h1 {
+  text-align: left;
+  margin-top: 0;
+}
+.organization_container1 {
+  position: relative;
+}
+.organization_container1:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -1.5em;
+  border-bottom: 3px solid $grey;
+}
+.organization_container2 {
+  position: relative;
+}
+.organization_container2:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -1.5em;
+  border-bottom: 3px solid $grey;
+}

@@ -9,6 +9,25 @@
 .about_container-content {
   width: 50%;
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.about_container-content h1 {
+  font-size: 3em;
+  padding: 1em;
+}
+.about_container-content p {
+  font-size: 2em;
+  padding: 4em;
+}
+.about_container-content img:last-child {
+  position: absolute;
+  right: 10em;
+  bottom: 5em;
 }
 .about_container-photo {
   width: 50%;
