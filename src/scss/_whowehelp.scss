@@ -3,7 +3,7 @@
 
 .whoWeHelp_container {
   width: 80vw;
-  height: 500px;
+  height: 900px;
   margin: 0 auto;
   text-align: center;
 }
@@ -38,6 +38,7 @@
   font-size: 1.4em;
   margin: 0 auto;
   width: 40%;
+  height: 170px;
 }
 
 .organization_container {
@@ -92,4 +93,27 @@
   height: 1px;
   bottom: -1.5em;
   border-bottom: 2px solid $grey;
+}
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.pagination li {
+  margin: 1em;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+.pagination li:hover {
+  cursor: pointer;
+}
+.active {
+  border: 1px solid black;
+}
+.previous {
+  display: none;
+}
+.next {
+  display: none;
+  border: none;
 }

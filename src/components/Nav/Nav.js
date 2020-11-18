@@ -34,7 +34,14 @@ const Nav = () => {
                 offset={-70}
                 duration={500}
                 style={linkStyle}><p className="link_text2">Fundacja i organizacja</p></Link>
-            <Link to={"/contact"} style={linkStyle}><p className="link_text2">Kontakt</p></Link>
+            <Link
+                activeClass="active"
+                to="footer_container"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                style={linkStyle}><p className="link_text2">Kontakt</p></Link>
         </div>
     );
 };
