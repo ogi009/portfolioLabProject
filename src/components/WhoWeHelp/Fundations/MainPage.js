@@ -1,7 +1,5 @@
 import React from 'react';
-import {Link, Route, Switch} from "react-router-dom";
-import Fundation1 from "./Fundation1";
-import Fundation2 from "./Fundation2";
+import {Link} from "react-router-dom";
 import Fundations from "./Fundations";
 import "../../../scss/_mainpagination.scss"
 

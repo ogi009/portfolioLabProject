@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from "../Nav/Nav";
 import '../../scss/_nav.scss';
 import '../../scss/_register.scss';
 import {Link} from "react-router-dom";
@@ -13,10 +12,6 @@ const Register = () => {
     console.log(watch("example"));
 
     const linkStyle = {
-        textDecoration: "none",
-        color: "#3C3C3C",
-    }
-    const linkStyle2 = {
         textDecoration: "none",
         color: "#3C3C3C",
     }
@@ -34,7 +29,7 @@ const Register = () => {
                     <form onSubmit={handleSubmit(onSubmit)} className="logIn_form2">
                         <label>Email
                             <input name="registerEmail"
-                                   ref={register({pattern: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i})}/>
+                                   ref={register({pattern: /^(([^<>()[\],;:\s@]+(\.[^<>()\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i})}/>
                             {errors.registerEmail && <span style={{fontWeight: "bold", color: "red"}}>Wpisz prawdiłowy email</span>}
                         </label>
                         <label>Hasło

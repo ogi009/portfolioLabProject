@@ -47,7 +47,7 @@ const Footer = () => {
                         <label>
                             Wpisz swój email
                             <input name="email"
-                                   ref={register({pattern: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i})}/>
+                                   ref={register({pattern: /^(([^<>()[\],;:\s@]+(\.[^<>()\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i})}/>
                             {errors.email && <span style={{fontWeight: "bold", color: "red"}}>Wpisz prawdiłowy email</span>}
                         </label>
                     </div>
