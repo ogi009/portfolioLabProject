@@ -1,0 +1,13 @@
+@import "colors";
+
+.mainpagination_buttons button {
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: $black;
+}
+.mainpagination_buttons button:hover {
+  border: 2px solid $grey;
+  cursor: pointer;
+}

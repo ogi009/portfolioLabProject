@@ -1,0 +1,76 @@
+@import "colors";
+@import "fonts";
+
+.logIn_container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.logIn_container img {
+  margin: 2em;
+}
+
+.logIn_container-content {
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+}
+
+.navi {
+  margin-right: 5em;
+}
+.logIn_container_links-1 {
+  margin-right: 5em;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  padding: 1em;
+  height: 5vh;
+}
+.logIn_form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: $white;
+  padding: 4em;
+  margin: 2em;
+}
+.logIn_form label {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  font-weight: bold;
+  text-align: left;
+}
+.logIn_form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $grey;
+
+  font-size: 1.3em;
+  padding-top: 1em;
+}
+.logIn_buttons{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.logIn_buttons button {
+  margin: 1em;
+  background-color: transparent;
+  padding:  1em 2em;
+  font-size: 1.2em;
+  border: 1px solid transparent;
+  color: $black;
+}
+.logIn_buttons button:hover {
+  border: 1px solid $black;
+}

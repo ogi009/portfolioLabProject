@@ -6,6 +6,7 @@ import About from "../About/About";
 import WhoWeHelp from "../WhoWeHelp/WhoWeHelp";
 import Footer from "../Footer/Footer";
 import ScrollArrow from "../ScrollArrow/ScrollArrow";
+import {BrowserRouter} from "react-router-dom";
 
 const Home = () => {
     return (
@@ -17,7 +18,6 @@ const Home = () => {
             <About/>
             <WhoWeHelp/>
             <Footer/>
-
         </>
     );
 };

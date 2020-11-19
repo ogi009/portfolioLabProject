@@ -3,7 +3,10 @@ import {useState} from 'react'
 import decoration from "../../assets/Decoration.svg";
 import "../../scss/_whowehelp.scss";
 import ReactPaginate from 'react-paginate';
-
+import Fundation1 from "./Fundations/Fundation1";
+import Fundation2 from "./Fundations/Fundation2";
+import {Link, Switch, Route, BrowserRouter} from 'react-router-dom'
+import MainPagination from "./Fundations/MainPage";
 
 
 const WhoWeHelp = () => {
@@ -30,8 +33,8 @@ const WhoWeHelp = () => {
         console.log("jeeah");
     }
     return (
-        <div className="whoWeHelp_container" id="whoWeHelp_container">
-            <div>
+        <section className="whoWeHelp_container" id="whoWeHelp_container">
+            <article>
                 <h1>Komu pomagamy?</h1>
                 <img src={decoration} alt="decoration_photo"/>
                 <div className="whoWeHelp_buttons">
@@ -39,8 +42,8 @@ const WhoWeHelp = () => {
                     <p onClick={handleClick2}>Organizacjom <br></br>samorządowym</p>
                     <p onClick={handleClick3}>Lokalnym <br></br> zbiórkom</p>
                 </div>
-            </div>
-            <div style={{display: show2, height: "100%"}}>
+            </article>
+            <section style={{display: show2, height: "100%"}}>
                 <p className="whoWeHelp_container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
                     ducimus exercitationem explicabo modi quibusdam. Accusantium aliquid consequuntur delectus
                     necessitatibus. Alias blanditiis ea enim et modi rerum sequi vel. Asperiores assumenda consequuntur
@@ -75,45 +78,19 @@ const WhoWeHelp = () => {
                     subContainerClassName={'numbers'}
                     activeClassName={'active'}
                 />
-            </div>
-            <div style={{display: show1, height: "100%"}}>
+            </section>
+            <section style={{display: show1, height: "100%"}}>
                 <p className="whoWeHelp_container-text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z
                     którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
+                <BrowserRouter>
+                    <MainPagination/>
+                </BrowserRouter>
 
-                <div className="organization_container organization_container1">
-                    <div className="organization_container-content">
-                        <h1>Fundacja “Dbam o Zdrowie”</h1>
-                        <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
-                    </div>
-                    <p>ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
-                </div>
-                <div className="organization_container organization_container1">
-                    <div className="organization_container-content">
-                        <h1>Fundacja “Dla dzieci”</h1>
-                        <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
-                    </div>
-                    <p>ubrania, meble, zabawki</p>
-                </div>
-                <div className="organization_container">
-                    <div className="organization_container-content">
-                        <h1>Fundacja “Bez domu”</h1>
-                        <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                    </div>
-                    <p>ubrania, jedzenie, ciepłe koce</p>
-                </div>
-                <ReactPaginate
-
-                    pageCount={2}
-                    pageRangeDisplayed={2}
-                    onPageChange={handlePageClick}
-                    containerClassName={'pagination'}
-                    subContainerClassName={'numbers'}
-                    activeClassName={'active'}
-                />
-            </div>
-            <div style={{display: show3, height: "100%"}}>
-                <p className="whoWeHelp_container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
+            </section>
+            <section style={{display: show3, height: "100%"}}>
+                <p className="whoWeHelp_container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation.</p>
                 <div className="organization_container organization_container1">
                     <div className="organization_container-content">
                         <h1>Zbiórka “Lorem Ipsum 1”</h1>
@@ -135,8 +112,9 @@ const WhoWeHelp = () => {
                     </div>
                     <p>Mi, quis, hendrerit, dolor</p>
                 </div>
-            </div>
-        </div>
+
+            </section>
+        </section>
 
     );
 };

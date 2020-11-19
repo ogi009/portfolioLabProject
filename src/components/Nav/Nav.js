@@ -9,7 +9,14 @@ const Nav = () => {
     }
     return (
         <div className="nav_container">
-            <Link to={"/start"} style={linkStyle}><p className="link_text2">Start</p></Link>
+            <Link
+                activeClass="active"
+                to="threecolumns"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                style={linkStyle}><p className="link_text2">Start</p></Link>
             <Link activeClass="active"
                   to="4steps_container"
                   spy={true}

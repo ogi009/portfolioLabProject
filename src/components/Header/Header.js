@@ -1,8 +1,10 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {  Link } from 'react-router-dom';
 import "../../scss/_header.scss";
 import decoration from "../../assets/Decoration.svg"
 import Nav from "../Nav/Nav";
+
+
 
 const Header = () => {
     const linkStyle = {
@@ -14,7 +16,7 @@ const Header = () => {
             <div className="img1"></div>
             <div className="content_container">
                 <div className="container_links-1">
-                    <Link to={"/logIn"} style={linkStyle}><p className="link_text">Zaloguj</p></Link>
+                    <Link to={"/LogIn"} style={linkStyle}><p className="link_text">Zaloguj</p></Link>
                     <Link to={"/register"}  style={linkStyle}><p className="link_text">Załóz konto</p></Link>
                 </div>
                 <Nav/>
