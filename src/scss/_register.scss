@@ -1,18 +1,18 @@
 @import "colors";
 @import "fonts";
 
-.logIn_container {
+.logIn_container2 {
   width: 100vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.logIn_container img {
+.logIn_container2 img {
   margin: 2em;
 }
 
-.logIn_container-content {
+.logIn_container-content2 {
   width: 50%;
   height: 50%;
   align-self: center;
@@ -23,10 +23,10 @@
   margin: 2em;
 }
 
-.navi {
+.navi2 {
   margin-right: 5em;
 }
-.logIn_container_links-1 {
+.logIn_container_links-2 {
   margin-right: 5em;
   display: flex;
   justify-content: flex-end;
@@ -34,24 +34,23 @@
   padding: 1em;
   height: 5vh;
 }
-.logIn_form {
+.logIn_form2 {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 65%;
+  height: 90%;
   background-color: $white;
   padding: 4em;
   margin: 2em;
 }
-
-.logIn_form label {
+.logIn_form2 label {
   display: flex;
   flex-direction: column;
   margin: 1em;
   font-weight: bold;
   text-align: left;
 }
-.logIn_form input {
+.logIn_form2 input {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $grey;
@@ -59,15 +58,15 @@
   font-size: 1.3em;
   padding-top: 1em;
 }
-.logIn_buttons{
+.logIn_buttons2{
   width: 180%;
   display: flex;
   justify-content: space-between;
-  margin: 4em;
   align-self: center;
   font-size: 1.3em;
+  margin-top: 3em;
 }
-.logIn_buttons button {
+.logIn_buttons2 button {
   margin: 1em;
   background-color: transparent;
   padding:  1em 2em;
@@ -75,6 +74,6 @@
   border: 1px solid transparent;
   color: $black;
 }
-.logIn_buttons button:hover {
+.logIn_buttons2 button:hover {
   border: 1px solid $black;
 }

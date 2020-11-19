@@ -25,8 +25,8 @@ const Header = () => {
                     <p>Oddaj niechciane rzeczy w zaufane ręce</p>
                     <img src={decoration} alt="decoration"/>
                     <div className="main_container-links">
-                        <Link to={"/giveAway"} style={linkStyle}><p className="link_text3">ODDAJ RZECZY</p></Link>
-                        <Link to={"/organize"} style={linkStyle}><p className="link_text3">ZORGANIZUJ ZBIÓRKĘ</p></Link>
+                        <Link to={"/LogIn"} style={linkStyle}><p className="link_text3">ODDAJ RZECZY</p></Link>
+                        <Link to={"/LogIn"} style={linkStyle}><p className="link_text3">ZORGANIZUJ ZBIÓRKĘ</p></Link>
                     </div>
                 </div>
             </div>

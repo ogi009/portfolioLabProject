@@ -3,7 +3,7 @@
 
 .footer_container {
   width: 100vw;
-  height: 100vhs;
+  height: 100vh;
   position: relative;
 }
 .background_photo {
@@ -71,6 +71,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .textarea_container label {
   text-align: left;
   font-weight: bold;
