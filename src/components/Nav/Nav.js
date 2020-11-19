@@ -16,7 +16,7 @@ const Nav = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                style={linkStyle}><p className="link_text2">Start</p></Link>
+                style={linkStyle}><p className="link_text2-border">Start</p></Link>
             <Link activeClass="active"
                   to="4steps_container"
                   spy={true}

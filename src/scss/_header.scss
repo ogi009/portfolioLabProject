@@ -36,7 +36,7 @@
   padding: 1em;
   border:1px solid transparent;
 }
-.link_text:hover {
+.link_text-border {
   border: 1px solid $yellow;
 }
 .nav_container {
@@ -51,7 +51,7 @@
   border:1px solid transparent;
 }
 .link_text2:hover {
-  border: 1px solid black;
+  cursor: pointer;
 }
 .main_container {
   margin-top: 3em;

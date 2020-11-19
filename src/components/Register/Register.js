@@ -16,17 +16,18 @@ const Register = () => {
         textDecoration: "none",
         color: "#3C3C3C",
     }
+    const linkStyle2 = {
+        textDecoration: "none",
+        color: "#3C3C3C",
+    }
     return (
         <>
             <div className="logIn_container2">
                 <div className="logIn_container_links-2">
+                    <Link to={"/"} style={linkStyle}><p className="link_text">Strona Głowna</p></Link>
                     <Link to={"/LogIn"} style={linkStyle}><p className="link_text">Zaloguj</p></Link>
-                    <Link to={"/register"}  style={linkStyle}><p className="link_text">Załóz konto</p></Link>
+                    <Link to={"/register"}  style={linkStyle}><p className="link_text link_text-border">Załóż konto</p></Link>
                 </div>
-                <div className="navi2">
-                    <Nav/>
-                </div>
-
                 <div className="logIn_container-content2">
                     <h1>Załóż konto</h1>
                     <img src={decoration} alt="decoration_icon"/>

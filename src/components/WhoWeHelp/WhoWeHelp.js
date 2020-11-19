@@ -3,9 +3,7 @@ import {useState} from 'react'
 import decoration from "../../assets/Decoration.svg";
 import "../../scss/_whowehelp.scss";
 import ReactPaginate from 'react-paginate';
-import Fundation1 from "./Fundations/Fundation1";
-import Fundation2 from "./Fundations/Fundation2";
-import {Link, Switch, Route, BrowserRouter} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import MainPagination from "./Fundations/MainPage";
 
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from "../Nav/Nav";
 import '../../scss/_nav.scss';
 import '../../scss/_login.scss';
 import {Link} from "react-router-dom";
@@ -19,11 +18,9 @@ const LogIn = () => {
         <>
             <div className="logIn_container">
                 <div className="logIn_container_links-1">
+                    <Link to={"/"} style={linkStyle}><p className="link_text">Strona Głowna</p></Link>
                     <Link to={"/LogIn"} style={linkStyle}><p className="link_text">Zaloguj</p></Link>
-                    <Link to={"/register"} style={linkStyle}><p className="link_text">Załóz konto</p></Link>
-                </div>
-                <div className="navi">
-                    <Nav/>
+                    <Link to={"/register"} style={linkStyle}><p className="link_text link_text-border">Załóż konto</p></Link>
                 </div>
                 <div className="logIn_container-content">
                     <h1>Zaloguj się</h1>
@@ -31,7 +28,7 @@ const LogIn = () => {
                     <form onSubmit={handleSubmit(onSubmit)} className="logIn_form">
                         <label>Email
                             <input name="logInEmail"
-                                   ref={register({pattern: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i})}/>
+                                   ref={register({pattern: /^(([^<>()[\],;:\s@]+(\.[^<>()\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i})}/>
                             {errors.logInEmail && <span style={{fontWeight: "bold", color: "red"}}>Wpisz prawdiłowy email</span>}
                         </label>
                         <label>Hasło

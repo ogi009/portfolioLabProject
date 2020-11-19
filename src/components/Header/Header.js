@@ -17,7 +17,7 @@ const Header = () => {
             <div className="content_container">
                 <div className="container_links-1">
                     <Link to={"/LogIn"} style={linkStyle}><p className="link_text">Zaloguj</p></Link>
-                    <Link to={"/register"}  style={linkStyle}><p className="link_text">Załóz konto</p></Link>
+                    <Link to={"/register"}  style={linkStyle}><p className="link_text link_text-border">Załóz konto</p></Link>
                 </div>
                 <Nav/>
                 <div className="main_container" id="maincontainer">

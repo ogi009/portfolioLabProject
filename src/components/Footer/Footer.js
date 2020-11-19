@@ -7,10 +7,27 @@ import icon2 from "../../assets/Instagram.svg";
 import {useForm} from "react-hook-form";
 
 const Footer = () => {
-    const {register, handleSubmit, watch, errors} = useForm();
-    const onSubmit = data => console.log(data);
+    const {register, handleSubmit, errors} = useForm();
+    const onSubmit = data => {
+        const API = "https://fer-api.coderslab.pl/v1/portfolio/contact";
+        fetch(`${API}`, {
+                method: "POST"
+                ,
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
 
-    console.log(watch("example"));
+
 
     return (
         <div className="footer_container" id="footer_container">
