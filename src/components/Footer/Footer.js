@@ -40,12 +40,12 @@ const Footer = () => {
                     </div>
                     <div className="input_container">
                         <label>
-                            Wpisz swoję imię
+                            <p>Wpisz swoję imię</p>
                             <input name="name" ref={register({required: true, minLength: 3})}/>
                             {errors.name && <span style={{fontWeight: "bold", color: "red"}}>Imię jest za krótkie</span>}
                         </label>
                         <label>
-                            Wpisz swój email
+                            <p>Wpisz swój email</p>
                             <input name="email"
                                    ref={register({pattern: /^(([^<>()[\],;:\s@]+(\.[^<>()\],;:\s@]+)*)|(.+))@(([^<>()[\],;:\s@]+\.)+[^<>()[\],;:\s@]{2,})$/i})}/>
                             {errors.email && <span style={{fontWeight: "bold", color: "red"}}>Wpisz prawdiłowy email</span>}
@@ -53,7 +53,7 @@ const Footer = () => {
                     </div>
                     <div className="textarea_container">
                         <label>
-                            Wpisz treść wiadomości
+                            <p>Wpisz treść wiadomości</p>
                         </label>
                         <textarea name="textarea" ref={register({required: true, minLength: 120})}/>
                         {errors.textarea && <span style={{fontWeight: "bold", color: "red"}}>Wiadomość musi mieć conajmniej 120 znaków</span>}

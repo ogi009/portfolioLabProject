@@ -43,7 +43,7 @@ const WhoWeHelp = () => {
                 </div>
             </article>
             <section style={{display: show2, height: "100%"}}>
-                <p className="whoWeHelp_container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                <p className="whoWeHelp_container-text whoWeHelp_container-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
                     ducimus exercitationem explicabo modi quibusdam. Accusantium aliquid consequuntur delectus
                     necessitatibus. Alias blanditiis ea enim et modi rerum sequi vel. Asperiores assumenda consequuntur
                     fuga incidunt iusto mollitia nulla quaerat quia repellat similique! </p>
