@@ -7,3 +7,139 @@ body {
   font-size: 13px;
   color: $black;
 }
+
+@media (max-width: 700px) {
+  body {
+    font-size: 5px;
+  }
+  .nav_container {
+    display: none;
+  }
+  .img1 {
+    display: none;
+  }
+  .container {
+
+  }
+  .content_container {
+    width: 100vw;
+    margin: 0;
+
+  }
+  .content_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/Home-Hero-Image.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+  }
+  .main_container {
+    margin: 6em auto;
+  }
+  .main_container img {
+    margin-top: 2em;
+  }
+  .main_container p {
+    font-size: 2.5em;
+    margin: 0 1em;
+  }
+  .main_container-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+  }
+  .main_container-links p {
+    font-size: 1.5em;
+    margin: 1em;
+  }
+  .container_links-1 {
+    font-size: 14px;
+  }
+  .link_text {
+    margin-right: 0;
+  }
+  .threeColumns_container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 6px;
+    height: 100%;
+  }
+  .threeColumns_container-content {
+    padding: 1em;
+  }
+  .threeColumns_container-title2 {
+    font-size: 16px;
+  }
+  .threeColumns_container-title3 {
+    font-size: 16px;
+    padding: 1em;
+  }
+  .steps_container-icons {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .steps_container-icons div {
+    margin: 3em 4em;
+    width: 25em;
+  }
+  .about_container-photo {
+    display: none;
+  }
+  .about_container-content {
+    width: 100%;
+    height: 80vh;
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+  .steps_container-title {
+    font-size: 8px;
+  }
+  .steps_container-icons p:first-of-type {
+    font-size: 3em;
+  }
+  .steps_container-icons p:last-child {
+    font-size: 2.5em;
+  }
+  .link_text4 {
+    font-size: 4em;
+  }
+  .about_container-content h1 {
+    font-size: 5em;
+  }
+  .about_container-content {
+    height: 70vh;
+  }
+  .about_container-content img:last-child {
+    bottom: 2em;
+  }
+  .about_container-content p {
+    font-size: 3em;
+  }
+  .organization_container {
+    font-size: 2em;
+    flex-direction: column;
+    margin: 1.5em;
+    align-items: center;
+  }
+  .whoWeHelp_container-text{
+    font-size: 3.5em;
+    width: 100%;
+  }
+  .whoWeHelp_container article h1 {
+    margin-top: 1em;
+    font-size: 5em;
+  }
+  .whoWeHelp_buttons {
+    font-size: 3em;
+    margin-bottom: 2em;
+  }
+  .whoWeHelp_buttons p{
+    margin: 0;
+  }
+}
