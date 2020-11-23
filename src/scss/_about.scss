@@ -2,12 +2,15 @@
 @import "fonts";
 
 .about_container {
- width: 100vw;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   margin-top: 2em;
 }
+
 .about_container-content {
   width: 50%;
+  height: 100%;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -15,21 +18,28 @@
   justify-content: center;
   text-align: center;
   position: relative;
-  height: 935px;
 }
+
 .about_container-content h1 {
   font-size: 3em;
   padding: 1em;
 }
+
 .about_container-content p {
   font-size: 2em;
-  padding: 4em;
+  padding: 2em;
 }
+
 .about_container-content img:last-child {
-  position: absolute;
-  right: 10em;
-  bottom: 5em;
+  height: 30%;
+  width: 30%;
+
 }
+
 .about_container-photo {
   width: 50%;
+  height: 100%;
+  background-image: url("../../src/assets/People.jpg");
+  background-position: center;
+  background-size: cover;
 }

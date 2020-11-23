@@ -14,7 +14,7 @@ const About = () => {
                 <img src={signature} alt="user_signature"/>
             </div>
             <div className="about_container-photo">
-                <img src={img} alt="people_photo"/>
+
             </div>
         </div>
     );

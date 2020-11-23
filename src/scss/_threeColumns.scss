@@ -5,18 +5,17 @@ html {
 }
 .threeColumns_container {
   width: 100vw;
-  height: 400px;
-  max-width:100%;
   background-image: url("../assets/3 Columns Background.png");
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .threeColumns_container-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3em;
-
+  text-align: center;
 }
 .threeColumns_container-title{
   font-size: 6em;
