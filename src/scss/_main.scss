@@ -124,9 +124,7 @@ body {
     height: 50vh;
   }
   .about_container-content img:last-child {
-    bottom: 2em;
-    width: 30%;
-    height: 30%;
+    margin-top: 10px;
   }
   .about_container-content p {
     font-size: 3em;
@@ -143,9 +141,6 @@ body {
     font-size: 3.5em;
     width: 100%;
   }
-  .whoWeHelp_container-text2{
-    font-size: 2.8em;
-  }
   .whoWeHelp_container article h1 {
     margin-top: 1em;
     font-size: 5em;
@@ -156,7 +151,8 @@ body {
   }
   .whoWeHelp_buttons p{
     margin: 0;
-    padding: 0;
+    padding: 5px;
+    font-size: 16px;
   }
   .organization_container-content {
     text-align: center;

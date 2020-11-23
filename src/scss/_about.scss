@@ -27,13 +27,11 @@
 
 .about_container-content p {
   font-size: 2em;
-  padding: 2em;
+  padding: 2em 4em;
 }
 
 .about_container-content img:last-child {
-  height: 30%;
-  width: 30%;
-
+  margin-right: 30px;
 }
 
 .about_container-photo {
@@ -42,4 +40,9 @@
   background-image: url("../../src/assets/People.jpg");
   background-position: center;
   background-size: cover;
+}
+.signature {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
