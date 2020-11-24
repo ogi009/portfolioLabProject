@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import img from "../../assets/Background-Contact-Form.jpg";
 import decoration from "../../assets/Decoration.svg"
 import "../../scss/_footer.scss";
@@ -8,7 +8,9 @@ import {useForm} from "react-hook-form";
 
 const Footer = () => {
     const {register, handleSubmit, errors} = useForm();
+    const [success, setSuccess] = useState(false);
     const onSubmit = data => {
+
         const API = "https://fer-api.coderslab.pl/v1/portfolio/contact";
         fetch(`${API}`, {
                 method: "POST"
@@ -25,6 +27,7 @@ const Footer = () => {
             .catch(error => {
                 console.log(error);
             });
+        setSuccess(true);
     }
 
 
@@ -37,6 +40,7 @@ const Footer = () => {
                     <div className="form1">
                         <h1>Skontaktuj się z nami</h1>
                         <img src={decoration} alt="decoration_icon"/>
+                        {success === true ? <h2 style={{color: "green", margin: "1em"}}>Wiadomość została wysłana!<br/> Wkrótce się skontaktujemy!</h2> : null}
                     </div>
                     <div className="input_container">
                         <label>
@@ -55,7 +59,7 @@ const Footer = () => {
                         <label>
                             <p>Wpisz treść wiadomości</p>
                         </label>
-                        <textarea name="textarea" ref={register({required: true, minLength: 120})}/>
+                        <textarea name="message" ref={register({required: true, minLength: 120})}/>
                         {errors.textarea && <span style={{fontWeight: "bold", color: "red"}}>Wiadomość musi mieć conajmniej 120 znaków</span>}
                         <button type="submit">Wyślij</button>
                     </div>

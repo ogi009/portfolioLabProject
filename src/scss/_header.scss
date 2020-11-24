@@ -22,9 +22,6 @@
   display: flex;
   justify-content: flex-end;
   font-size: 1em;
-  padding: 1em;
-  margin: 1em;
-  height: 5vh;
 }
 .link_text1{
   margin-right: 10em;
@@ -32,27 +29,13 @@
 .link_text {
   color: $grey;
   text-decoration: none;
-  margin-right: 2.5em;
   padding: 1em;
   border:1px solid transparent;
 }
 .link_text-border {
   border: 1px solid $yellow;
 }
-.nav_container {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.9em;
-  margin: 1em;
-  height: 5em;
-}
-.link_text2{
-  padding: 0.5em;
-  border:1px solid transparent;
-}
-.link_text2:hover {
-  cursor: pointer;
-}
+
 .main_container {
   margin-top: 3em;
   margin-right: 3em;
