@@ -164,9 +164,6 @@ body {
   .organization_container-content p {
     margin: 1em
   }
-  .whoWeHelp_container {
-    height: 900px;
-  }
   .mainpagination_buttons button {
     font-size: 2.5em;
   }
@@ -190,6 +187,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
   }
   .form_container {
     width: 100%;
@@ -294,7 +292,17 @@ body {
     font-size: 4em;
     margin: 1em;
   }
-  .textarea_container label p {
-    margin: 1em;
+  .textarea_container label  {
+    margin: 3em;
+  }
+  .pagination li {
+    font-size: 4em;
+  }
+  .foundation {
+    text-align: center;
+  }
+  .foundation2 {
+    text-align: center;
+    font-weight: bold;
   }
   }

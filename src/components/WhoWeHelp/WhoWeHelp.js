@@ -3,9 +3,8 @@ import {useState} from 'react'
 import decoration from "../../assets/Decoration.svg";
 import "../../scss/_whowehelp.scss";
 
-import {BrowserRouter} from 'react-router-dom'
-import MainPagination from "./Fundations/MainPage";
-import OrganizationMainPage from "./Organizations/OrganizationMainPage";
+import Fundation1 from "./Fundations/Fundation1";
+import Organization1 from "./Organizations/Organization1";
 
 
 const WhoWeHelp = () => {
@@ -28,9 +27,6 @@ const WhoWeHelp = () => {
         setShow2("none")
         setShow3("block")
     }
-    // const handlePageClick = () => {
-    //     console.log("jeeah");
-    // }
     return (
         <section className="whoWeHelp_container" id="whoWeHelp_container">
             <article>
@@ -43,20 +39,17 @@ const WhoWeHelp = () => {
                 </div>
             </article>
             <section style={{display: show2, height: "100%"}}>
-                <p className="whoWeHelp_container-text whoWeHelp_container-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                <p className="whoWeHelp_container-text whoWeHelp_container-text2">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Amet
                     ducimus exercitationem explicabo modi quibusdam. Accusantium aliquid consequuntur delectus
                     necessitatibus. Alias blanditiis ea enim et modi rerum sequi vel. Asperiores assumenda consequuntur
                     fuga incidunt iusto mollitia nulla quaerat quia repellat similique! </p>
-                <BrowserRouter>
-                    <OrganizationMainPage/>
-                </BrowserRouter>
+                <Organization1/>
             </section>
             <section style={{display: show1, height: "100%"}}>
                 <p className="whoWeHelp_container-text">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z
                     którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
-                <BrowserRouter>
-                    <MainPagination/>
-                </BrowserRouter>
+                <Fundation1/>
 
             </section>
             <section style={{display: show3, height: "100%"}}>
@@ -64,25 +57,25 @@ const WhoWeHelp = () => {
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation.</p>
                 <div className="organization_container organization_container1">
-                    <div className="organization_container-content">
+                    <div className="foundation">
                         <h1>Zbiórka “Lorem Ipsum 1”</h1>
                         <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
                     </div>
-                    <p>Egestas, sed, tempus</p>
+                    <p className="foundation2">Egestas, sed, tempus</p>
                 </div>
                 <div className="organization_container organization_container1">
-                    <div className="organization_container-content">
+                    <div className="foundation">
                         <h1>Zbiórka “Lorem Ipsum 2”</h1>
                         <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
                     </div>
-                    <p>Ut, aliquam, purus, sit, amet</p>
+                    <p className="foundation2">Ut, aliquam, purus, sit, amet</p>
                 </div>
                 <div className="organization_container">
-                    <div className="organization_container-content">
+                    <div className="foundation">
                         <h1>Zbiórka “Lorem Ipsum 3"</h1>
                         <p>Scelerisque in dictum non consectetur a erat nam.</p>
                     </div>
-                    <p>Mi, quis, hendrerit, dolor</p>
+                    <p className="foundation2">Mi, quis, hendrerit, dolor</p>
                 </div>
 
             </section>

@@ -3,7 +3,6 @@
 
 .whoWeHelp_container {
   width: 80vw;
-  height: 750px;
   margin: 0 auto;
   text-align: center;
 }
@@ -43,10 +42,9 @@
 .organization_container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   color: $black;
   margin: 2.5em;
-  width: 100%;
 }
 
 .organization_container h1 {

@@ -1,30 +1,90 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Pagination from "../../Pagination/Pagination";
 
 const Organization1 = () => {
+    const organization = [
+        {
+            id: 1,
+            name: "Organizacja “Lorem Ipsum 1”",
+            purpose: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            need: "Egestas, sed, tempus",
+        },
+        {
+            id: 2,
+            name: "Organizacja “Lorem Ipsum 2”",
+            purpose: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+            need: "Ut, aliquam, purus, sit, amet",
+        },
+        {
+            id: 3,
+            name: "Organizacja “Lorem Ipsum 3”",
+            purpose: "Scelerisque in dictum non consectetur a erat nam.",
+            need: "Mi, quis, hendrerit, dolor",
+        },
+        {
+            id: 4,
+            name: "Organizacja “Lorem Ipsum 4”",
+            purpose: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            need: "Egestas, sed, tempus",
+        },
+        {
+            id: 5,
+            name: "Organizacja “Lorem Ipsum 5”",
+            purpose: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+            need: "Ut, aliquam, purus, sit, amet",
+        },
+        {
+            id: 6,
+            name: "Organizacja “Lorem Ipsum 6”",
+            purpose: "Scelerisque non consectetur a erat nam.",
+            need: "Mi, quis, hendrerit, dolor",
+        },
+        {
+            id: 7,
+            name: "Organizacja “Lorem Ipsum 7”",
+            purpose: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            need: "Egestas, sed, tempus",
+        },
+        {
+            id: 8,
+            name: "Organizacja “Lorem Ipsum 8”",
+            purpose: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+            need: "Ut, aliquam, purus, sit, amet",
+        },
+        {
+            id: 9,
+            name: "Organizacja “Lorem Ipsum 9”",
+            purpose: "Scelerisque in dictum a erat nam.",
+            need: "Egestas, sed, tempus",
+        }
+    ]
+
+    const [currentPage, setCurrenPage] = useState(1);
+    const [postPerPage] = useState(3);
+
+
+    const indexOfLastPost = currentPage * postPerPage;
+    const indexOfFirstPost = indexOfLastPost - postPerPage;
+    const currentPosts = organization.slice(indexOfFirstPost, indexOfLastPost);
+
+    const paginate = (pageNumber) => {
+        setCurrenPage(pageNumber)
+    }
+
+
     return (
         <>
-        <div className="organization_container organization_container1">
-            <div className="organization_container-content">
-                <h1>Organizacja “Lorem Ipsum 1”</h1>
-                <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
-            </div>
-            <p>Egestas, sed, tempus</p>
-        </div>
-    <div className="organization_container organization_container2">
-        <div className="organization_container-content">
-            <h1>Organizacja “Lorem Ipsum 2”</h1>
-            <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
-        </div>
-        <p>Ut, aliquam, purus, sit, amet</p>
-    </div>
-    <div className="organization_container">
-        <div className="organization_container-content">
-            <h1>Organizacja “Lorem Ipsum 3”</h1>
-            <p>Scelerisque in dictum non consectetur a erat nam.</p>
-        </div>
-        <p>Mi, quis, hendrerit, dolor</p>
-    </div>
-            </>
+            {currentPosts.map(foundations => (
+                <div className="organization_container organization_container1">
+                    <div key={foundations.id} className="foundation">
+                        <h1>{foundations.name}</h1>
+                        <p>{foundations.purpose}</p>
+                    </div>
+                    <p className="foundation2">{foundations.need}</p>
+                </div>
+            ))}
+            <Pagination postPerPage={postPerPage} totalPost={organization.length} paginate={paginate}/>
+        </>
     );
 };
 
