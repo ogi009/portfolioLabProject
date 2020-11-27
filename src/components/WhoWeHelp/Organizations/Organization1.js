@@ -74,13 +74,13 @@ const Organization1 = () => {
 
     return (
         <>
-            {currentPosts.map(foundations => (
-                <div className="organization_container organization_container1">
-                    <div key={foundations.id} className="foundation">
-                        <h1>{foundations.name}</h1>
-                        <p>{foundations.purpose}</p>
+            {currentPosts.map(organization => (
+                <div key={organization.id} className="organization_container organization_container1">
+                    <div className="foundation">
+                        <h1>{organization.name}</h1>
+                        <p>{organization.purpose}</p>
                     </div>
-                    <p className="foundation2">{foundations.need}</p>
+                    <p className="foundation2">{organization.need}</p>
                 </div>
             ))}
             <Pagination postPerPage={postPerPage} totalPost={organization.length} paginate={paginate}/>

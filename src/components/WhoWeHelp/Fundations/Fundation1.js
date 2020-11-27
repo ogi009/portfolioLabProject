@@ -58,8 +58,8 @@ const Fundation1 = () => {
     return (
         <>
             {currentPosts.map(foundations => (
-                <div className="organization_container organization_container1">
-                    <div key={foundations.id} className="foundation">
+                <div key={foundations.id} className="organization_container organization_container1">
+                    <div  className="foundation">
                         <h1>{foundations.name}</h1>
                         <p>{foundations.purpose}</p>
                     </div>

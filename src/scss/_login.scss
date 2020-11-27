@@ -78,3 +78,12 @@
 .logIn_buttons button:hover {
   border: 1px solid $black;
 }
+.logout {
+  margin-top: 5rem;
+}
+.logOut_button {
+  border: 1px solid grey;
+  color: #737373;
+  text-decoration: none;
+  padding: 1em;
+}
