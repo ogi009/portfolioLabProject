@@ -20,7 +20,7 @@ const LogOut = () => {
                     </Link>
                 </div>
                 <div className="logIn_container-content logout">
-                    <h1>Wylogowanie nastąpiło pomyslnie</h1>
+                    <h1>Wylogowanie nastąpiło pomyślnie</h1>
                     <img src={decoration} alt="decoration_icon"/>
                     <Link to={"/"} style={linkStyle}><p className="logOut_button">Strona Głowna</p></Link>
                 </div>

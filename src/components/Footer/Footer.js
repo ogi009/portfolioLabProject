@@ -7,9 +7,13 @@ import icon2 from "../../assets/Instagram.svg";
 import {useForm} from "react-hook-form";
 
 const Footer = () => {
-    const {register, handleSubmit, errors} = useForm();
+    const {register, handleSubmit, errors} = useForm(
+        {
+            defaultValues: {},
+        }
+    );
     const [success, setSuccess] = useState(false);
-    const onSubmit = data => {
+    const onSubmit = (data,e) => {
 
         const API = "https://fer-api.coderslab.pl/v1/portfolio/contact";
         fetch(`${API}`, {
@@ -28,6 +32,7 @@ const Footer = () => {
                 console.log(error);
             });
         setSuccess(true);
+        e.target.reset();
     }
 
 
