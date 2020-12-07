@@ -65,7 +65,7 @@ const Footer = () => {
                             <p>Wpisz treść wiadomości</p>
                         </label>
                         <textarea name="message" ref={register({required: true, minLength: 120})}/>
-                        {errors.textarea && <span style={{fontWeight: "bold", color: "red"}}>Wiadomość musi mieć conajmniej 120 znaków</span>}
+                        {errors.message && <span style={{fontWeight: "bold", color: "red"}}>Wiadomość musi mieć conajmniej 120 znaków</span>}
                         <button type="submit">Wyślij</button>
                     </div>
                 </form>
