@@ -1,6 +1,6 @@
 # Portfolio Lab Projekt - "ODDAJ RZECZY"
 
-[a link](portfolio-lab-project.netlify.app/)
+DEMO: [portfolio-lab-project.netlify.app](portfolio-lab-project.netlify.app/)
 
 The project was created as part of completing the Portfolio Lab course at Coders Lab.
 Working on the project allowed me to understand more about creating React applications, using the SASS preprocessor and creating the RWD website.
